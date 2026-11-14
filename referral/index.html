@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refer a Friend | Gardner/Fox</title>
+<meta name="description" content="Refer a friend to Gardner/Fox and get a thank-you when their project starts.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Cormorant+Garamond:wght@500;600;700&display=swap">
+<style>
+:root{--navy:#1F2A36;--navy-dk:#141C25;--acc:#CDAA6E;--acc-dk:#8A6C36;--sky:#F6F6F3;--ink:#1B1B1B;--body:#4A4A4A;--muted:#8A8A8A;--line:#E3E3DD;--grey:#F0F0EC;--lab:#8A6C36;--lab-dk:#CDAA6E;--btn-text:#1F2A36;--head:'Cormorant Garamond',Georgia,serif;--ui:'Roboto',Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--body);font-family:var(--ui);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.inner{max-width:1100px;margin:0 auto;padding-left:40px;padding-right:40px}
+h1,h2,h3{margin:0;color:var(--ink);font-family:var(--head)}
+.lab{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--lab);margin:0 0 12px}
+header.top{border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px}
+.hrow img{height:auto;max-height:56px;max-width:250px;width:auto;display:block}
+.hphone{color:var(--ink);text-decoration:none;font-family:var(--head);font-weight:700;font-size:16px;text-align:right}
+.hphone span{display:block;font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero{background:var(--sky);padding-top:64px;padding-bottom:72px}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+.hero h1{font-size:44px;line-height:1.12;font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--acc-dk)}
+.lede{font-size:18px;color:var(--body);margin:0 0 22px;max-width:520px}
+.ticks{list-style:none;padding:0;margin:0 0 22px}
+.ticks li{position:relative;padding-left:30px;margin:0 0 10px;color:var(--ink)}
+.ticks li:before{content:"\2713";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--acc);color:var(--btn-text);font-size:12px;font-weight:700;text-align:center;line-height:20px}
+.badges span{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:99px;padding:5px 14px;font-size:13px;font-weight:600;color:var(--ink);margin:0 8px 8px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:0 18px 44px rgba(20,30,60,.10)}
+.card h2{font-size:24px;margin-bottom:6px}
+.card p.sub{margin:0 0 18px;color:var(--muted);font-size:14.5px}
+.grp{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lab);margin:18px 0 8px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{margin:0 0 12px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:15.5px;color:var(--ink);padding:12px 13px;border:1.5px solid var(--line);border-radius:8px;background:#fff}
+.field textarea{min-height:76px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy)}
+.field.bad input,.field.bad select{border-color:#C0392B}
+.field .err{display:none;color:#C0392B;font-size:12.5px;margin-top:4px}
+.field.bad .err{display:block}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--body);margin:6px 0 16px}
+.chk input{margin-top:4px;width:18px;height:18px;accent-color:var(--navy)}
+.chk.bad{color:#C0392B}
+.btn{display:block;width:100%;border:0;border-radius:9px;background:var(--acc);color:var(--btn-text);font:inherit;font-weight:700;font-size:17px;padding:15px 20px;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+.fine{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
+.done{display:none;text-align:center;padding:18px 4px}
+.done .tick{width:60px;height:60px;border-radius:50%;background:var(--acc);color:var(--btn-text);font-size:30px;line-height:60px;margin:0 auto 14px}
+.done h2{font-size:26px;margin-bottom:8px}
+.done .ref{display:inline-block;margin-top:12px;padding:6px 14px;border-radius:99px;background:var(--grey);font-size:13px;font-weight:600;color:var(--ink)}
+section.band{padding-top:72px;padding-bottom:72px}
+section.alt{background:var(--sky)}
+.sec-h{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-h h2{font-size:34px;line-height:1.18;margin-bottom:10px}
+.sec-h p{margin:0;color:var(--muted);font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+.step b{display:flex;width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--head);font-size:19px;align-items:center;justify-content:center;margin-bottom:14px}
+.step h3{font-size:20px;margin-bottom:8px}
+.step p{margin:0;font-size:15.5px}
+.reward{background:var(--navy-dk);color:#fff;border-radius:18px;padding:44px 40px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.reward .amt{font-family:var(--head);font-size:76px;font-weight:800;line-height:1;color:var(--lab-dk)}
+.reward .amt small{display:block;font-family:var(--ui);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#fff;opacity:.8;margin-top:8px}
+.reward h2{color:#fff;font-size:28px;margin-bottom:10px}
+.reward p{margin:0 0 8px;color:#fff;opacity:.92}
+.srcnote{font-size:12.5px;color:var(--muted);margin:14px 0 0}
+.reward .srcnote{color:#fff;opacity:.7}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.two h2{font-size:30px;margin-bottom:14px}
+.who{list-style:none;padding:0;margin:0}
+.who li{padding:12px 0 12px 30px;border-bottom:1px solid var(--line);position:relative;color:var(--ink);font-weight:500}
+.who li:before{content:"\2192";position:absolute;left:0;color:var(--acc-dk);font-weight:700}
+.tqs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tq{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+.tq blockquote{margin:0 0 14px;font-size:16px;color:var(--ink)}
+.tq figcaption{font-size:13.5px;font-weight:600;color:var(--lab)}
+.share{text-align:center}
+.share .bt{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px}
+.share a,.share button{font:inherit;font-weight:600;font-size:15.5px;border-radius:9px;border:1.5px solid var(--navy);background:#fff;color:var(--navy);padding:12px 22px;cursor:pointer;text-decoration:none}
+.share a:hover,.share button:hover{background:var(--navy);color:#fff}
+footer{background:#1F2A36;color:#fff;padding-top:44px;padding-bottom:44px;font-size:14px}
+footer img{height:auto;max-height:40px;max-width:220px;width:auto;display:block;margin-bottom:14px}
+footer p{margin:0 0 8px;opacity:.85}
+footer .terms{max-width:760px;font-size:12.5px;opacity:.7;margin-top:14px}
+@media(max-width:860px){.inner{padding-left:20px;padding-right:20px}.hgrid,.two{grid-template-columns:1fr}.hero{padding-top:40px;padding-bottom:48px}.hero h1{font-size:34px}.steps,.tqs{grid-template-columns:1fr}.reward{grid-template-columns:1fr;gap:18px;padding:32px 24px}.reward .amt{font-size:60px}.sec-h h2{font-size:28px}.row2{grid-template-columns:1fr}.card{padding:22px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="inner hrow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAAVCAYAAABbomVfAAAMiUlEQVR42u2deZQU1RXGf8OiDg6LIOgIKEEEHRAVEQWMxAX3PUaMa+IaiIIYY9zXuCRiohhAIq4xamIMk+iJK6AxLokmAURcUMeogLIoyAgIA/jH+yp1p+zq7pF+rzonfOfU6Zrq6qlbr2/dd+9377tdUVNTQwFsCXQDmgHzgPfMe82BSqCe8NgY+IIN2IANKCVaAuOAnwNv/5/cbx9gU+BjYM7/4k20KPD+McBhwNZAhQz548B9wFqgB9AVeDoD2U8EaoHFga7XHagBlgIf6FgzTWSVQAMwX8oQAv2Bal1zkY5VaIKr1Hdbr/eXBJBnM2AwsAJ4X+NRDyws8LnB+uyHknMLoBPwLvBaCeRqBuwDbALUAZ/reBtgoxznNwDL9PqB9LxU2BNoB/xH14gMSSvJUg/MBT7L0CZ0B06XIS8F9tb91QHLday19DQ57vXAGj1jnwS41+2AU4GdJNMi2bd7gJUBnt9O0rFlCee4B7AA+Lc5vquc6reA1dKXbhrTOWmG/HLgKu3PBKbrwx2An+lGx0kxH8vAkHcBJskjvy/QNTcDegPDgF0S79XLeDYH1kkZxgBTPcpTLQW8E9g88d4qbVXm2FTgAY2bD2wC7ADsD+yXMNQvFPgua4DfmQd+UkK51wcVMk7fAB5JjFGuh7WVcXA6y3kpFbpKh2qlK0kdir6v+ZL14oCOSoQfy4iUyhvvBuwIjE4Y7eV5xv0e4Hse73FH4HZgd+Ad6ec8Oay3absBuMizDTsSOCXHe78H7k0Y8mo9W3+WcwLwqM6dX5GgVtrLKO8CPAycptkxiROMAR0BTAisbNcDFwJP6eZCY7kM9z+AQzSTbwTsCzwobw/gR8AvPMuyB/Ci9ifrgZmrh6WtvsvhwLE6Zy7wfY2dL5yshxE5AFuZqCENwzR2vYHZnuS6ArhS+/sBU3KcsxFwBvArjd10D3KcCtyh/YuBmxXJdNTYjTF61h94PaBufyZ5Li/x/x0J3GL04zc5xv2bsj8vAwM83d8PjL0aZJ4di/F6ZmbJ2C/37JA9KXoHedy98pz/JtBTdu8pG3baGXG2lHesaJWlKf/st/IGo9ktNM7W61DN+KHxpl4XGgO1StFJtaEybpKh9Yn3zP4she0N+nsp8IyM5K4yFp2lOEd4lOle4/m3BJ4v4jPzjCHxhXcSHnkurFK0+RIw0JMcsxMyrTD6dJOZdFtJp0KhlyiGWz3f8+qUcZ8CnCXKwQdOM0a8a4oRj5zTO2Rcp3se8/lAX70CbJtH7w6TET8k6YhZQ/4kjp+cA4wqQoCZ+sygwEb0lARlMIrwWGe8iFze+viA8lmusXWe8/6VmFRqZdR9wToBPYE/Fjg/+k7XeJRpdcIDLDQZLQugS1U5jj1knIVtgG8F0uuzgDeKyGvwNak3zOSehruBiYnzS4Gexrm4ApeTyYfT9f1vJ8fVtz3Zh5gjr81xzuaiVa4D/kKORBDyvgdr/8ImCHCpZpKKgEb0FtE695tZtllgQ17oenYW7+xZlqaM/UwaJ7HGe5Rre3mTD+vvo0QjrO/Y+vzeLCZ4zL80L+KcVxJjGQJHaxLJUk9X4ajTUlek3ajXtU2IOCJ68Hh5zT7xBnCt9jsZGspG3jOAS/Ip9g16XVKE52TxMo7vC4W9cLzvSZq1Iy/0BMoL7c3+4jKT7afG6z0clwn3gQ646pVjDI1xLXAg5Y3qgB5wPmxh9j8kTLVKV1xuIAtsk4ju15Xwf3eSroOjzD4t8nPW8x0dYAwuNRTLSMObP4Yrj9w5n4cyWLwMwN++JsezLtCXPQmXrAPHu0alZOeXmTEYbvbvKjPZlgHPmr8P9Uhj9Nb+EHP8MVwFSdZI48gHEedgskIXM5nU4zcxjaEAF2jzjRXkTnb7eo4PTImWC8EmmUNN7ocmosLzJH9NMTW2Ed4tIjRtm/Jea8832AnHVw03XGqU+e+bb7YKrJB3ESeC78TxWuUGW9bUG/+c9Eu4agHMJFyR8RhEtfbR1lwe6TUBHRP4Kh/dBZeEa2FozxAL344lpisJUMpbJZvRWkZqtPFG8VBuaB3PYvExca6nm8ckLIlc1ljidQc34WrxXy+0IGjrJtAA7YBz9Y/b60FtqRuejJ9sd4Tof9ta4JsVgkRe+YmBjUEvKeDGUsjvaLJ5F1dCNoHyxJKUEN4nJgL9gDNFX0yVHmWFWlx1T4VxUlpp/4GAcnxXOtNSkXGU85kGXFZkxQ8lWBizJf5LZSP8WlsSszxdrw2NyyuLxRe44oW25llZECg66idD3oBbW0EhQ94y4aXkwye4+tKdE17d8Tgi3rfHcFniWB3wBHCAZBgeqNIgwlY4vr7acM3jyiA0bwrWBLzWWdKdAQpVb8QtQCEDD/0cRQr2WeiMq1bpFVCOQbhkpl1ktq/nxWRJnCdnbC7h1oFYuqgtrlple89VZhSZaCYlSRsyUltq9PJF2Zq8VMlniURPMZiuEABcJcSMQHXjY82S+EpcidIkM+BnBjYGUzRzVpvxOIXy4IALRVYk6rdDYQhxsul8TcBkUHk0E9cCINpm4JJbVybGhwD5lH64ZGOEqwOPxdHEFRoh8LwijmirxZUEtg9QCtuuiVVOzYzDMy9gZd4BOGo2ssu3FhJ0VmI9f1PCjlAe3Ul6nWMSMgtw/OL4DGvKN+WrSYoqGicTyxE7mf0Zga+9UiEjZnFZOxqX24VAm5Tjz9GYviNAlUwUXZ5B3NZgXKDr98Rxv78km6quCM/kqo8uEWYl2iQ0Rc4O2n87UP+Xo3B0cV8czbbIOLOD8hnyR83ffRKeAUXUwvr2pPqYUHxPeS92290oYVfcas8sMB/Hd0ZylFu1Cma14BATKj6agQyziVcvRsZzDz0oWSdBZxCXtobGJOLk+AjCtJ+4AFfe+FEZjLuv3ISlcQY0sSQzsnOPBxiDjrjy76uJk5tHJPI6qYZ8Ho4XxNQvlhNuk5I9K488udURN/jKuhTxQVzzJ3BNfw4vQ0P+E+K8yDiy67T3EPH6hT64ZHnU7KtcsAVwUAY0R0QF/MkkYH3h24RrPJcVPsKtQgdXpbU1xXdutHSHb8wB/omjmSK8QFw00TGtgCLyps81RP45ASsZKKJX8GBSVjPRmAObrP39m8D1f12szUMrHUfcyvYPpJdr4iGRUwg1xM2QlhInGn2OUT5cROPOme2J+8RkJROJh/dIz3IkdWiNmTw2MY4BnlbftgtEq6zN2JZckLKfDyOIK+bqPMt3v2xF/xQ5PjZNv/ZIM+Sf4jLl0bGpRXKdULin+fpgjKnHLoSbabxCKgTS+nUMNROR7+oDW2P8eQEj/oqp7x4YoOdyMd71UOL+7qs9UyvNUxJgpCzMGKYIhsCVQi/iVuBGcpztMTp7jzAldQ2JfkRZUDeRAf9hEesnxuJq+v8egKUYiaNldy0Qqa01NE+LtN4T03AriFbooX8f2I30xT/b52n6Q4kWDYxUqFEM/pqYwXz2RuhhKIFceJW4Z00/XImkrxDZVshsq3Ejkdi8A1eZUYlLKvXAf2vUGorvTDnQJI8bPNf9R9gtT3On43EJzyn4+VEOW2aXtpDtMuJKqFtpvFq4lLTKvYEM6Q407lGeBW40JcyzcG1zSclVROWpvruXXqLI73HzfefCC8QLNtvKKfuvMa/I8VNvHXSzo0z/6uc0a7eRYeor7+l2KdkblLab35XyQqoMRVFLeheyEbge2/1zND4aU8SK1WKwM3CwqJMdE6VUj0jGd/hqeeI+xiN5GMej15ZAnoNlAEfmqMBYpAl5MzOGD0lBn/SolFvi+t4MlJEAl8B6Bdd/emGBhTH3y9i+RWkbZZ0mw31G4r0FikoqTCK4A41/0ef5Eq+FGICr265I5IGmK/JcnaNfTSvTWOlpUSHrq9NHSA83x28/oJNlM0blMJbTAq4mJcF9T8QthKpTBLRSDs5exsBe5+n6bXEU5zDipnoNsqfjcyyMOhC32PGEHJTy3cCUXLTIYhxnfo3C3oNwDW22Uaj8msKOyfgpx1knj/Y4XJKipQY830+ofYD75aK6RL1olxLSBytx2f2rEj3Au8uLW5VCG/TTPXWUoVtYwp4pb0sZFhrqoEpbC8lcJwOwLlD4/JF043oZ0V66diE64QFNPj6Woy/G9RG6z9BPlTKUzRKUx0o9IA1NiAZpQj3zq9KLJUaO7il0w2KNX7Xk7KrvdmWJJrhLAjR1WyJPc2+zWK9K9uRTssE04h9nOE4GvIXGYrSilE88Pycz5CDPFWVSqYh6ecoYPiG7uyZRutoeWPglkwjKAD7rR3AAAAAASUVORK5CYII=" alt="Gardner/Fox Associates"><a class="hphone" href="tel:+16105258305"><span>Questions? Call</span>(610) 525-8305</a></div></header>
+<section class="hero"><div class="inner hgrid">
+ <div>
+  <p class="lab">Referral Program</p>
+  <h1>Refer a friend planning a home renovation and <em>get a $1,000 gift card.</em></h1>
+  <p class="lede">Send a friend, neighbor or family member to Gardner/Fox. They get a free consultation. When their project goes ahead, you get a $1,000 gift card.</p>
+  <ul class="ticks"><li>Takes about a minute to send a name.</li><li>No pressure on your friend. We reach out once to introduce ourselves.</li><li>You are thanked after their project starts.</li></ul>
+  <div class="badges"><span>Bryn Mawr, PA</span><span>Since 1987</span></div>
+ </div>
+ <div class="card" id="card">
+  <div id="formwrap">
+   <h2>Refer a friend</h2>
+   <p class="sub">Two minutes, one form.</p>
+   <form id="rf" novalidate>
+    <div class="grp">About you</div>
+    <div class="row2">
+     <div class="field"><label for="yn">Your name</label><input id="yn" autocomplete="name"><div class="err">Please enter your name.</div></div>
+     <div class="field"><label for="yp">Your phone</label><input id="yp" type="tel" autocomplete="tel"><div class="err">Please enter a phone number.</div></div>
+    </div>
+    <div class="field"><label for="ye">Your email</label><input id="ye" type="email" autocomplete="email"><div class="err">Please enter a valid email.</div></div>
+    <div class="grp">About your friend</div>
+    <div class="row2">
+     <div class="field"><label for="fn">Their name</label><input id="fn"><div class="err">Please enter their name.</div></div>
+     <div class="field"><label for="fp">Their phone</label><input id="fp" type="tel"><div class="err">Please enter a phone number.</div></div>
+    </div>
+    <div class="field"><label for="fe">Their email (optional)</label><input id="fe" type="email"></div>
+    <div class="field"><label for="fw">What are they planning?</label><select id="fw"><option value="">Choose one</option><option>Additions</option><option>Kitchens and baths</option><option>Interior design</option><option>Cabinetry</option><option>Something else</option></select><div class="err">Please choose one.</div></div>
+    <div class="field"><label for="fm">Anything we should know? (optional)</label><textarea id="fm"></textarea></div>
+    <label class="chk" id="okwrap"><input type="checkbox" id="ok"><span>I have let my friend know that Gardner/Fox may call or email them about their project.</span></label>
+    <button class="btn" type="submit">Send my referral</button>
+    <p class="fine">We only use these details to follow up on this referral.</p>
+   </form>
+  </div>
+  <div class="done" id="done"><div class="tick">&#10003;</div><h2>Thank you, <span id="dn"></span>.</h2><p>We will reach out to <span id="df"></span> shortly and keep you posted.</p><span class="ref" id="dref"></span></div>
+ </div>
+</div></section>
+<section class="band"><div class="inner">
+ <div class="sec-h"><p class="lab">How it works</p><h2>Three simple steps</h2><p>No codes, no paperwork.</p></div>
+ <div class="steps">
+  <div class="step"><b>1</b><h3>Send us their name</h3><p>Fill in the form above, or share this page with them directly.</p></div>
+  <div class="step"><b>2</b><h3>We reach out</h3><p>Gardner/Fox introduces itself and offers a free consultation. There is no obligation.</p></div>
+  <div class="step"><b>3</b><h3>You get thanked</h3><p>When their project goes ahead, we send you a $1,000 gift card.</p></div>
+ </div>
+</div></section>
+<section class="band alt"><div class="inner">
+ <div class="reward"><div class="amt">$1,000<small>gift card</small></div>
+  <div><h2>Your thank-you for every project that starts</h2><p>There is no limit on how many friends you can send our way.</p><p class="srcnote">Sample reward amount. Gardner/Fox sets the final reward and the terms.</p></div></div>
+</div></section>
+<section class="band"><div class="inner two">
+ <div><p class="lab">Who to send our way</p><h2>Anyone planning one of these</h2><ul class="who"><li>Additions</li><li>Kitchens and baths</li><li>Interior design</li><li>Cabinetry</li></ul></div>
+ <div><p class="lab">Where we work</p><h2>Philadelphia and the Main Line</h2><p>We serve Philadelphia and the Main Line.</p></div>
+</div></section>
+<section class="band alt"><div class="inner"><div class="sec-h"><p class="lab">Why people recommend us</p><h2>What clients say</h2></div><div class="tqs"><figure class="tq"><blockquote>&ldquo;Gardner/Fox has been providing Philadelphia and the Main Line with award winning design and construction for over 30 years.&rdquo;</blockquote><figcaption>From gardnerfox.com</figcaption></figure><figure class="tq"><blockquote>&ldquo;Our divisions are housed under one roof, which allows us to expedite projects faster and communicate with you effectively.&rdquo;</blockquote><figcaption>From gardnerfox.com</figcaption></figure><figure class="tq"><blockquote>&ldquo;Our craftsmen and construction managers handle the construction of your remodel from inception to completion. Weekly project meetings keep you informed.&rdquo;</blockquote><figcaption>From gardnerfox.com</figcaption></figure></div><p class="srcnote" style="text-align:center">Statements from gardnerfox.com. The site publishes no named residential reviews.</p></div></section>
+<section class="band share"><div class="inner">
+ <div class="sec-h"><p class="lab">Share it</p><h2>Rather send the page yourself?</h2><p>Copy the link or text it to a friend.</p></div>
+ <div class="bt"><button id="cp" type="button">Copy link</button><a id="sms" href="#">Text it to a friend</a><a id="mail" href="#">Email it</a></div>
+</div></section>
+<footer><div class="inner"><img src="data:image/png;base64,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" alt="Gardner/Fox Associates"><p>Gardner/Fox Associates</p><p>(610) 525-8305</p><p class="terms">Reward is paid after the referred customer signs a contract with Gardner/Fox and work begins. Terms are set by Gardner/Fox and may change. Submitting this form is a request for contact, not a proposal or a contract.</p></div></footer>
+<script>
+(function(){
+  var SUBMIT_ENDPOINT = null; // demo mode: logs the payload. Replace with the CRM webhook when live.
+  var SHORT = "Gardner/Fox";
+  var $ = function(id){ return document.getElementById(id); };
+  function bad(el, on){ var f = el.closest('.field'); if(f) f.classList.toggle('bad', on); }
+  function val(){
+    var ok = true;
+    [['yn',1],['yp',1],['fn',1],['fp',1],['fw',1]].forEach(function(p){ var e=$(p[0]); var b=!e.value.trim(); bad(e,b); if(b) ok=false; });
+    var em=$('ye'); var be=!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em.value.trim()); bad(em,be); if(be) ok=false;
+    var c=$('ok').checked; $('okwrap').classList.toggle('bad',!c); if(!c) ok=false;
+    return ok;
+  }
+  $('rf').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if(!val()){ var f=document.querySelector('.field.bad input,.field.bad select'); if(f) f.focus(); return; }
+    var id = 'REF-' + Math.random().toString(36).slice(2,8).toUpperCase();
+    var payload = { path:'referral', id:id, referrer:{ name:$('yn').value.trim(), phone:$('yp').value.trim(), email:$('ye').value.trim() },
+      friend:{ name:$('fn').value.trim(), phone:$('fp').value.trim(), email:$('fe').value.trim(), project:$('fw').value, note:$('fm').value.trim() },
+      friendInformed:true, submittedAt:new Date().toISOString() };
+    if(SUBMIT_ENDPOINT){ fetch(SUBMIT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(){}); }
+    else { console.log('REFERRAL', JSON.stringify(payload)); }
+    $('dn').textContent = payload.referrer.name.split(' ')[0];
+    $('df').textContent = payload.friend.name.split(' ')[0];
+    $('dref').textContent = 'Reference ' + id;
+    $('formwrap').style.display='none'; $('done').style.display='block';
+    $('card').scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  var url = location.href.split('#')[0];
+  var msg = 'I would recommend ' + SHORT + ' for home projects. Here is their referral page: ' + url;
+  $('sms').href = 'sms:?&body=' + encodeURIComponent(msg);
+  $('mail').href = 'mailto:?subject=' + encodeURIComponent('A recommendation: ' + SHORT) + '&body=' + encodeURIComponent(msg);
+  $('cp').addEventListener('click', function(){
+    var b=this, done=function(){ b.textContent='Link copied'; setTimeout(function(){ b.textContent='Copy link'; },2000); };
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done,done); }
+    else { var t=document.createElement('textarea'); t.value=url; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
+  });
+})();
+</script>
+</body>
+</html>
